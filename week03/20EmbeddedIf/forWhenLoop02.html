@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HardLoopExercise</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>
+            ### Instructions
+
+            * Starting from scratch, write code that loops through the following array and logs the name of each animal
+            on
+            the farm
+            to the console: <br>
+
+            ```
+            var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"]; <br>
+            ```
+
+            * Then check if the first letter in the animal's name begins with a "c" or "o". <br>
+            If it does, create an alert
+            saying,
+            "Starts with 'c' or 'o'!" <br>
+
+            * **HINT:** You can access the first character of a string as if it were the first element of an array. <br>
+            <hr>
+            <h2>
+                The use of charAt() method with an index value of 0 scans all items in an array.
+            </h2>
+        </h2>
+    </div>
+
+    <script>
+        var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"]
+
+        for (i = 0; i < myFarm.length; i++) {
+            console.log(myFarm[i])
+
+            if (myFarm[i].charAt(0) === "c" ||
+                myFarm[i].charAt(0) === "o") {
+                alert("Starts with 'c' or 'o'!")
+            }
+
+        }
+
+    </script>
+
+
+
+
+    <!-- <script>
+        // array of animals
+        var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+
+        // Send Array to Console
+        for (var i = 0; i < myFarm.length; i++) {
+            console.log(myFarm[i]);
+            // Use the charAt() method to read the first letter (index=0) of each item in the array.
+            if (myFarm[i].charAt(0) === "c" || myFarm[i].charAt(0) === "o") {
+                alert("Starts with 'c' or 'o'!")
+            }
+        }
+    </script> -->
+</body>
+
+</html>

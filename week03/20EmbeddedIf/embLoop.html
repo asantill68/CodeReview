@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check C or R</title>
+</head>
+
+<body>
+    <script>
+        var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"]
+
+        for (i = 0; i < myFarm.length; i++) {
+            console.log(myFarm[i])
+
+            if (myFarm[i].charAt(0) == "c" || myFarm[i].charAt(0) == "h") {
+                alert("Farm Animal starts with C or H.")
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt and Confirm</title>
+</head>
+
+<body>
+    <script>
+        var likeSushi = confirm("Do you like Sushi?")
+
+        if (likeSushi) {
+            var sushiType = prompt("What is your favorite type of sushi?")
+            alert("Your favorite sushi type is:  " + sushiType)
+        }
+
+        else {
+            alert("Booooo!  You no likey sushi...")
+        }
+    </script>
+</body>
+
+</html>

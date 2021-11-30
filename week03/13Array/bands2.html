@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        var dogNames = ["buddy", "eli", "outback", "tucker"]
+        var userDogName = prompt("what is your dog name?")
+        var userDogNameToLower = userDogName.toLowerCase()
+
+        if (dogNames.indexOf(userDogNameToLower) >= 0) {
+            alert("Yeah!  I have a dog named " + userDogName + " too!!!")
+        }
+        else {
+            alert("That's a lame dog name!")
+        }
+    </script>
+
+</body>
+
+</html>

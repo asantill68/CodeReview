@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Object</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">
+            Object Activity
+        </h1>
+        <p class="text-center">
+            Here is a Car Object!
+        </p>
+        <p>
+            ### Instructions <br>
+
+            * Using the code from the previous activity as a starting point, create a complete application that
+            meets the following
+            specifications: <br>
+
+            * Users can enter keyboard input (letters).
+            <br>
+            * Each of the car's methods are assigned to a key.
+            <br>
+            * When the user presses a key, it calls the appropriate function.
+            <br>
+            * These letters also trigger a global function called `reWriteStats()` that logs the car's make, model,
+            color, mileage,
+            and `isWorking` status to the console.
+            <br>
+            * **HINT:\*** You WILL need to use the `document.onkeyup()` function to collect input from the user's
+            keyboard.
+        </p>
+    </div>
+    <script>
+        //-------------------------------------Method Opened-------------------------------------//
+        // Create the object named car
+        var car = {
+            // Properties of car
+            make: "Toyota",
+            model: "Tundra",
+            color: "Silver",
+            mileage: 250000,
+            isWorking: true,
+
+            // Create the driveToWork function
+            // A method is a function associated with an object
+            driveToWork: function () {
+                alert("Old mileage:  " + this.mileage)
+
+                // Add 15 to the car's mileage
+                this.mileage = this.mileage + 15
+
+                // Alert the new mileage
+                alert("New mileage:  " + this.mileage)
+            },
+
+            // Create a function that calculated trip around the world
+            driveAroundWorld: function () {
+                alert("Old mileage:  " + this.mileage)
+                // Add 24,000 to mileate
+                this.mileage = this.mileage + 24000
+
+                alert("New mileage:  " + this.mileage)
+                alert("Car needs a tune-up!")
+
+                // Change isWorking to false
+                this.isWorking = false
+            },
+
+            // Create getTuneUp
+            getTuneUp: function () {
+                alert("Car is GTG!!")
+                this.isWorking = true
+            },
+
+            // hong method alerts a hong
+            honk: function () {
+                alert("Honk!  Honk!!")
+            }
+        }
+        //-------------------------------------Method Closed-------------------------------------//
+
+        // Send properties to the console
+        console.log("Car Make:  " + car.make)
+        console.log("----------------------")
+        console.log("Car Model:  " + car.model)
+        console.log("----------------------")
+        console.log("Car Color:  " + car.color)
+        console.log("----------------------")
+        console.log("Car Mileage:  " + car.mileage)
+        console.log("----------------------")
+        console.log("Car Is Working:  " + car.isWorking)
+        console.log("----------------------")
+
+        // Call the functions
+        car.driveToWork()
+        car.driveAroundWorld()
+        car.getTuneUp()
+        car.honk()
+
+
+
+
+    </script>
+</body>
+
+</html>

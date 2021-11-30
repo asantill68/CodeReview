@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-warning bg-dark">
+            ### Instructions
+            <br>
+
+            * Create a website (from scratch) that asks users if they eat steak. <br>
+
+            * If they respond with "yes", write the following to the page: "Here’s a Steak Sandwich!" <br>
+
+            * If they respond with "no", write the following to the page: "Here’s a Tofu Stir-Fry!" <br>
+
+            * **BONUS:** Ask what the user’s birth year is. If they are under 21, alert the following: "No Sake for
+            you!" <br>
+
+            * **HINT:** You will need to use `document.write()` from a few slides back.
+        </h3>
+
+    </div>
+    <br>
+    <div id="text-here"></div>
+
+    <div id="text-here2"></div>
+
+    <script>
+        var eatSteak = confirm("Do you eat steak?")
+        var steakText = document.getElementById("text-here")
+        // var ageText = document.getElementById("text-here2")
+
+        if (eatSteak) {
+            steakText.textContent = ("Here's a Steak Sandwitch!!!")
+        } else {
+            steakText.textContent = ("Here's a Tofu Stir-Fry!")
+        }
+
+        var yearBorn = prompt("What year were you born?")
+
+        if (yearBorn < 2000) {
+            // ageText.textContent = 
+            alert("Sake! Sake! Sake for you!!!")
+        }
+        else if (yearBorn > 2000) {
+            // ageText.textContent = 
+            alert("No Sake for you.")
+        }
+        else {
+            // steakText.textContent = 
+            alert("You Squeezed by!")
+        }
+
+    </script>
+</body>
+
+</html>
