@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: yellow;
+}
+
+.container {
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: green;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  padding: 5px;
+}
+
+.if_text {
+  color: yellow;
+}
+
+h2 {
+  padding: 5px;
+}

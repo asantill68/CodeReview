@@ -44,7 +44,7 @@ body {
 }
 .third_p {
   color: orange;
-  font-family: cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 h2:hover {
@@ -57,5 +57,5 @@ h2:hover {
 }
 button {
   width: 200px;
-  margin-left: 470px;
+  margin-left: 400px;
 }
