@@ -1,0 +1,46 @@
+body {
+  background-color: grey;
+  color: white;
+}
+
+.container {
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  width: 1080px;
+  background-color: black;
+  padding: 0px;
+  border: 5px solid red;
+}
+
+p {
+  padding: 5px;
+}
+/* img is an inline element which makes it hard to center */
+/* Center an image using an id inside a div element */
+#pic1 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Center using display and margin ona  */
+/* convert iframe from an inline to a block element */
+#if_1 {
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+/* nest iframe element in div and use text-align: center */
+#if_2 {
+  text-align: center;
+  padding: 5px;
+}
+
+/*  */
+#if_3 {
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+}
